@@ -28,6 +28,11 @@ cd mycv
 pip install -r requirements.txt
 ```
 
+### Collect Static Files
+```bash
+python manage.py collectstatic --noinput
+```
+
 ### Apply Migrations
 ```bash
 python manage.py migrate
