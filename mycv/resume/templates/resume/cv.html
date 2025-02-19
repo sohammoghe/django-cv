@@ -1,0 +1,92 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soham Moghe - Resume</title>
+    <link rel="stylesheet" href="{% static 'resume/css/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Soham Moghe</h1>
+            <p>Brooklyn, NY 11209 | smxxxxx@nyu.edu | +1 xxx xxx xxxx | <a href="https://linkedin.com/in/soham-moghe" target="_blank">Linkedin</a> | <a href="https://github.com/sohammoghe" target="_blank">Github</a></p>
+        </header>
+
+        <section class="section">
+            <h2>EDUCATION</h2>
+            <p><strong>New York University, Tandon School of Engineering, Brooklyn, NY</strong> <span class="right">Expected: December 2025</span></p>
+            <p>Masters in Computer Science</p>
+            <p>Relevant Courses: Software Engineering, Principle of Database Systems, Big Data</p>
+
+            <p><strong>University of Mumbai, Mumbai, India</strong> <span class="right">June 2023</span></p>
+            <p>Bachelor of Engineering in Computer Engineering with <i>Distinction</i></p>
+            <p>Relevant Courses: Applied Mathematics, Analysis of Algorithms, Artificial Intelligence, and Machine Learning</p>
+        </section>
+
+        <section class="section">
+            <h2>EXPERIENCE</h2>
+            <p><strong>Research Assistant</strong> (NYU, Tandon School of Engineering) <span class="right">Nov 2024 - Present</span></p>
+            <ul>
+                <li>Collaborated with Prof. Christopher Policastro on advancing time series forecasting methodologies, building upon the AR-Net
+model to propose an enhanced ARIMAX-Net architecture.</li>
+                <li>Conducted research on integrating exogenous variables into time series prediction to improve accuracy and applicability in
+dynamic forecasting scenarios.</li>
+                <li>Implemented the AR-Net model using TensorFlow/Keras to establish a baseline for benchmarking against ARIMAX-Net</li>
+            </ul>
+
+            <p><strong>Proctor</strong> (NYU, Tandon School of Engineering) <span class="right">Dec 2024</span></p>
+            <ul>
+                <li>Supervised final examinations for CS-UY 1114: Introduction to Programming & Problem Solving (Prof. Romero Cruz) and
+CS-UY 2124: Object-Oriented Programming (Prof. Omar Mansour), ensuring adherence to academic integrity policies.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>PROJECTS</h2>
+            <p><strong>CryptoVision – A Real-Time Cryptocurrency Forecasting Platform</strong></p>
+            <ul>
+                <li>Engineered an end-to-end system for cryptocurrency data ingestion, processing, storage, and forecasting.</li>
+                <li>Utilized Apache Kafka for streaming real-time data and Apache Cassandra for scalable data storage.</li>
+                <li>Implemented forecasting model using ARIMA, VAR, LSTM, and Moving Averages to predict cryptocurrency trends, achieving
+high predictive accuracy.</li>
+                <li>Optimized data accessibility by creating a robust data pipeline using Apache Spark for exporting processed data from Cassandra
+to CSV.</li>
+                <li>Designed Grafana dashboards for real-time data visualization, enabling insightful analytics of cryptocurrency trends and
+performance.</li>
+                <li>Deployed a user-friendly web interface with Streamlit, allowing users to visualize forecasted trends and interactively select
+models and parameters</li>
+            </ul>
+
+            <p><strong>Traffic Sign Classification</strong></p>
+            <ul>
+                <li>Developed a methodology to identify different types of traffic signs like stop, speed limit,etc.</li>
+                <li>Constructed a multi-class classification model for traffic signs using one-hot encoding and softmax activation in final level of
+CNN model, enhancing detection accuracy to 94%</li>
+                <li>Fabricated a user-friendly user interface using Streamlit and hosted the project using Ngrok.</li>
+                <li>Published a research paper on the same in the Journal of Algebraic Statistics, Volume 13 No. 2, ISSN: 1309-3452</li>
+            </ul>
+
+            <p><strong>Unicare – An Electronic Health Record Platform</strong></p>
+            <ul>
+                <li>Conceived an electronic health record system to digitize the health record storage system for easy and quick retrieval of patient
+information while maintaining confidentiality.</li>
+                <li>Created login and registered pages for doctors and patients using front-end technologies such as HTML, CSS, Bootstrap, and
+back-end framework Flask.</li>
+                <li>Designed databases for storing doctor and patient data using Flask SQL Alchemy and SQLite; Fabricated password hashing
+function using Flask Bcrypt.</li>
+                <li>Integrated backend features like registration and health record updation using Flask REST APIs.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>TECHNICAL SKILLS</h2>
+            <p><strong>Programming Languages:</strong> C, C++, Java, Python, JavaScript, SQL</p>
+            <p><strong>Frameworks & Libraries:</strong> Flask, React, Tailwind, Express, Pandas, Scikit-learn, Keras, NLTK, Streamlit</p>
+            <p><strong>Databases:</strong> MySQL, SQLite, MongoDB, Cassandra, Firebase</p>
+            <p><strong>Software & Tools:</strong> Git, GitHub, NodeJS, Apache Kafka, Spark, Hadoop, Grafana, Power BI, Ngrok</p>
+        </section>
+    </div>
+</body>
+</html>
